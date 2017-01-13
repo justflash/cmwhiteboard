@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "whiteboard plugin for catchupmath",
   "main": "index.js",
+  "git repository":"https://github.com/justflash/cmwhiteboard.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files":["assets/css","assets/js","assets/gwt-resources"],
   "author": "sathesh.fdd@gmail.com",
   "license": "ISC"
 }

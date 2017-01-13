@@ -1,0 +1,424 @@
+.wb-title {
+	float: left;
+	position: absolute;
+    right: 10px;	
+	top: 0px;
+	color: black;
+	font-weight: bold;
+	overflow: hidden; 
+	width: 200px;
+	font-size: 1em;
+}
+.wb-container {
+    position: relative;
+    background: rgba(255,255,255,0);
+}
+
+.scroll_track {
+	position: relative;
+	background: #efefef;
+	border: 1px solid #999999;
+}
+
+.scroll_thumb {
+	position: absolute;
+	background: #333333;
+	border: 1px solid #666666;
+	top: 0px;
+	left: 0px;
+	border: 1px solid #333333;
+}
+
+.vscroller {
+	position: absolute;
+}
+
+.vscroll_track {
+	width: 15px;
+}
+
+.vscroll_thumb {
+	width: 15px;
+	height: 30px;
+}
+
+.hscroller {
+	position: absolute;
+}
+
+.hscroll_track {
+	height: 15px;
+}
+
+.hscroll_thumb {
+	width: 30px;
+	height: 15px;
+}
+
+.canvas-container {
+	position: relative;
+}
+
+.drawsection {
+	position: relative;
+	border: 1px solid #000000;
+	width: 800px;
+	height: 600px;
+	overflow: hidden;
+}
+
+ .cm_whiteboard .drawsection {
+	border: none;
+}
+
+.ocanvas {
+	
+}
+
+.canvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.gcanvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.tcanvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.inputBox {
+	position: absolute;
+	border: 1px solid #333333;
+	display: none;
+}
+
+.tools {
+	padding-left: 5px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	background: #eeeeee;
+	border-bottom: 1px solid #000000;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.keypad button {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+	cursor: hand;
+	font-family: Arial, Tahoma, Verdana, Calibri;
+	text-align: center;
+	border: 1px solid #000000;
+	background: #ececec;
+}
+
+.small_tool_button {
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	margin: 0px 2px 0px 0px;
+	padding: 0px;
+	cursor: pointer;
+	cursor: hand;
+	font-family: Arial, Tahoma, Verdana, Calibri;
+	text-align: center;
+	border: 1px solid #000000;
+	background: #ececec;
+	-webkit-background-size: 100%; /*for webKit*/
+	-moz-background-size: 100%; /*Mozilla*/
+	-o-background-size: 100%; /*opera*/
+	background-size: 100%; /*generic*/
+	-webkit-box-shadow: 2px 2px 2px rgba(51, 51, 51, 0.7);
+	-moz-box-shadow: 2px 2px 2px rgba(51, 51, 51, 0.7);
+	box-shadow: 2px 2px 2px rgba(51, 51, 51, 0.7);
+	/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec',
+		endColorstr='#ffffff' );*/
+}
+
+.big_tool_button {
+	width: 45px;
+	height: 30px;
+	vertical-align: middle;
+	margin: 0px 2px 0px 0px;
+	padding: 0px;
+	cursor: pointer;
+	cursor: hand;
+	font-family: Arial, Tahoma, Verdana, Calibri;
+	text-align: center;
+	border: 1px solid #000000;
+	background: #ececec;
+	-webkit-background-size: 30px; /*for webKit*/
+	-moz-background-size: 30px; /*Mozilla*/
+	-o-background-size: 30px; /*opera*/
+	background-size: 30px; /*generic*/
+	-webkit-box-shadow: 1px 2px 4px rgba(51, 51, 51, 0.7);
+	-moz-box-shadow: 1px 2px 4px rgba(51, 51, 51, 0.7);
+	box-shadow: 1px 2px 4px rgba(51, 51, 51, 0.7);
+	/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec',
+		endColorstr='#ffffff' );*/
+}
+
+.btnType1 {
+	width: 45px;
+	height: 25px;
+}
+
+.button_clear {
+	width: 45px;
+	height: 25px;
+}
+
+.done_btn {
+	/* width: 60px; */
+	height: 25px;
+}
+
+.button_text {
+	background-image: url(../gwt-resources/images/whiteboard/txt.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.button_pencil {
+	background-image: url(../gwt-resources/images/whiteboard/pencil.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.button_line {
+	background-image: url(../gwt-resources/images/whiteboard/line.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.button_rect {
+	background-image: url(../gwt-resources/images/whiteboard/rect.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.button_oval {
+	background-image: url(../gwt-resources/images/whiteboard/oval.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.button_eraser {
+	background-image: url(../gwt-resources/images/whiteboard/eraser.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.button_gr2D {
+	background-image: url(../gwt-resources/images/whiteboard/gr_2d.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.button_nL {
+	background-image: url(../gwt-resources/images/whiteboard/gr_nL.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.button_calc {
+	background-image: url(../gwt-resources/images/whiteboard/calculator.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	right:10px;
+}
+.button_calc_disabled {
+	background-image: url(../gwt-resources/images/whiteboard/calculator-no.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.button_move {
+	background-image: url(../gwt-resources/images/whiteboard/move.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.button_nav {
+	background-image: url(../gwt-resources/images/whiteboard/nav.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.static_whiteboard {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    margin-top: 10px;
+}
+        
+.show_problem {
+    margin-left: 25px;
+}
+
+.problemStatement {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+
+.wb_json .drawsection {
+    border: none;
+}
+
+
+.wb_json .wb-container {
+    background: transparent;
+}
+.dragresize {
+ position: absolute;
+ width: 7px;
+ height: 7px;
+ font-size: 1px;
+ background: #EEE;
+ border: 1px solid #333;
+}
+.dragresize-tl {
+ top: -9px;
+ left: -9px;
+ cursor: move;
+}
+.dragresize-tm {
+ top: -9px;
+ left: 50%;
+ margin-left: -5px;
+ cursor: n-resize;
+}
+.dragresize-tr {
+ top: -9px;
+ right: -9px;
+ cursor: ne-resize;
+}
+
+.dragresize-ml {
+ top: 50%;
+ margin-top: -5px;
+ left: -9px;
+ cursor: w-resize;
+}
+.dragresize-mr {
+ top: 50%;
+ margin-top: -5px;
+ right: -9px;
+ cursor: e-resize;
+}
+
+.dragresize-bl {
+ bottom: -9px;
+ left: -9px;
+ cursor: sw-resize;
+}
+.dragresize-bm {
+ bottom: -9px;
+ left: 50%;
+ margin-left: -5px;
+ cursor: s-resize;
+}
+.dragresize-br {
+ bottom: -9px;
+ right: -9px;
+ cursor: se-resize;
+}
+.dragresize-hit {
+ position: absolute;
+ width: 15px;
+ height: 15px;
+ font-size: 1px;
+ border: 0px solid #000;
+}
+.dragresize-tl-hit {
+ top: -18px;
+ left: -18px;
+ cursor: move;
+}
+.dragresize-tm-hit {
+ top: -18px;
+ left: 50%;
+ margin-left: -10px;
+ cursor: n-resize;
+}
+.dragresize-tr-hit {
+ top: -18px;
+ right: -18px;
+ cursor: ne-resize;
+}
+
+.dragresize-ml-hit {
+ top: 50%;
+ margin-top: -10px;
+ left: -18px;
+ cursor: w-resize;
+}
+.dragresize-mr-hit {
+ top: 50%;
+ margin-top: -10px;
+ right: -18px;
+ cursor: e-resize;
+}
+
+.dragresize-bl-hit {
+ bottom: -18px;
+ left: -18px;
+ cursor: sw-resize;
+}
+.dragresize-bm-hit {
+ bottom: -18px;
+ left: 50%;
+ margin-left: -10px;
+ cursor: s-resize;
+}
+.dragresize-br-hit {
+ bottom: -18px;
+ right: -18px;
+ cursor: se-resize;
+}
+
+.canvas-container .input_box {
+    position:absolute;
+    border:1px solid black;
+    left:0px;
+    top:0px;
+}
+
+.canvas-container .input_box [name='dummy_resize'] {
+	min-height:40px;
+	display: none;
+	font-family: Arial;
+	font-size: 12pt;
+	word-wrap:normal;
+	white-space:normal;
+}
+
+.canvas-container .content {
+    white-space:normal;
+    min-width:120px;
+    min-height:40px;
+    width:120px;
+    height:40px;
+    font-family: Arial;
+    font-size: 12pt;
+    border:0px;
+    padding:0px;
+    margin:0px;
+    resize:none;
+    overflow:hidden;	
+}
+.wb_menu button[name=button_temp] {
+    display: none;
+}
