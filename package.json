@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "whiteboard plugin for catchupmath",
   "main": "index.js",
-  "git repository":"https://github.com/justflash/cmwhiteboard.git",
+"repository": {
+    "type": "git",
+    "url": "git://github.com/justflash/cmwhiteboard.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
