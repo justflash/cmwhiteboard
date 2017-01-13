@@ -8265,3 +8265,4 @@ function setupMathQuill() {
         $('.mathquill-embedded-latex').mathquill();
     });
 }
+module.export=Whiteboard;
