@@ -1,6 +1,6 @@
 {
   "name": "cmwhiteboard",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "whiteboard plugin for catchupmath",
   "main": "index.js",
 "repository": {

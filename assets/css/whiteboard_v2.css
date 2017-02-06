@@ -239,7 +239,7 @@
 	right:10px;
 }
 .button_calc_disabled {
-	background-image: url(../gwt-resources/images/whiteboard/calculator-no.png);
+	background-image: url(../gwt-resources/images/whiteboard/calculator_no.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
