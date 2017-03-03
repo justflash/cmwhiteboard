@@ -105,7 +105,7 @@ var Whiteboard = function (cont, isStatic, _opts) {
     var objsErased = {};
     var checkForErase = {};
     // --- /gwt-resources/images/whiteboard/
-    var imgPath = 'assets/gwt-resources/images/whiteboard/'
+    var imgPath = '/assets/gwt-resources/images/whiteboard/'
         //imgPath = './'
     var opts = {
         "templates": [{
@@ -135,6 +135,7 @@ var Whiteboard = function (cont, isStatic, _opts) {
     }
     wb.options = opts;
     wb.options.showTemplates = true;
+    wb.rendered=false;
     if (_opts) {
         $.extend(wb.options, _opts);
     }
@@ -2621,7 +2622,7 @@ var w = maxWidth;
                     //console.log(gd)
                     updateCanvas();
                     _mq_holder = null;
-                    delete _mq_holder;
+                   // delete _mq_holder;
                 }
                 // _mq_holder.src = "http://chart.apis.google.com/chart?cht=tx&chf=bg,s,ffffff00&chl=" + encodeURIComponent("\\fontsize{18} " + txt);
             var txtCol = String(colr).substring(1)
@@ -2871,7 +2872,7 @@ var w = maxWidth;
     }
     var touchMoveFunction = touchStartFunction;
 
-    var _imageBaseDir = 'assets/gwt-resources/images/whiteboard/';
+    var _imageBaseDir = '/assets/gwt-resources/images/whiteboard/';
 
     /** main HTML document object */
     var mainDoc;
@@ -7145,6 +7146,7 @@ source: https://gist.github.com/754454
         }
         canvas_drawing_width = rect.xmax > canvas_drawing_width ? rect.xmax : canvas_drawing_width;
         canvas_drawing_height = rect.ymax > canvas_drawing_height ? rect.ymax : canvas_drawing_height;
+        wb.rendered=true;
     }
 
     function renderToBuffer(_obj, _ctx) {
@@ -8265,4 +8267,17 @@ function setupMathQuill() {
         $('.mathquill-embedded-latex').mathquill();
     });
 }
-module.exports=Whiteboard;
+var _exports=Whiteboard;
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+    module.exports = _exports;
+  }
+  else {
+    if (typeof define === 'function' && define.amd) {
+      define([], function() {
+        return _exports;
+      });
+    }
+    else {
+      //window.wb = _exports;
+    }
+  }

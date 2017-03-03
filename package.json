@@ -1,16 +1,38 @@
 {
   "name": "cmwhiteboard",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "whiteboard plugin for catchupmath",
   "main": "index.js",
-"repository": {
+  "repository": {
     "type": "git",
     "url": "git://github.com/justflash/cmwhiteboard.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "quick": "jasmine",
+    "debug": "karma start"
   },
-  "files":["assets/css","assets/js","assets/gwt-resources"],
+  "dependencies": {},
+  "devDependencies": {
+    "canvas": "^1.6.3",
+    "jasmine": "^2.5.3",
+    "jasmine-core": "^2.5.2",
+    "jquery": "^3.1.1",
+    "jsdom": "^9.11.0",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-jquery": "^0.1.1",
+    "karma-requirejs": "^1.1.0",
+    "karma-webpack": "^2.0.2",
+    "requirejs": "^2.3.3",
+    "webpack": "^2.2.1"
+  },
+  "files": [
+    "assets/css",
+    "assets/js",
+    "assets/gwt-resources"
+  ],
   "author": "sathesh.fdd@gmail.com",
   "license": "ISC"
 }
