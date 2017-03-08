@@ -2,7 +2,7 @@ var wb=require('./assets/js/whiteboard_v3.js');
 exports.Whiteboard={
     instances:{},
     addWhiteboard:function(scope,containerid,options){
-        var isReadOnly=options.isReadOnly||false;//
+        var isReadOnly=options.isReadOnly||false;
         var width=options.width||300;
         var height=options.height||300;
         var cbck=options.callback;
