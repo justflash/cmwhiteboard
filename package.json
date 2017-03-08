@@ -1,11 +1,11 @@
 {
   "name": "cmwhiteboard",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "whiteboard plugin for catchupmath",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/justflash/cmwhiteboard.git"
+    "url": "git://github.com/sathesh-cm/cmwhiteboard.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
